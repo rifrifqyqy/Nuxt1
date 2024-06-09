@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mx-24 grid grid-cols-5 gap-4">
+    <div class="mx-24 grid grid-cols-4 gap-4">
       <div v-for="p in products">
         <CardProducts :products="p" />
       </div>
@@ -12,8 +12,9 @@
 definePageMeta({
   layout: "products",
 });
+import productsData from "~/data/menu.json";
+const products = JSON.parse(JSON.stringify(productsData));
 
-const { data: products } = await useFetch("https://fakestoreapi.com/products");
 </script>
 
 <style scoped></style>

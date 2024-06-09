@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "title": "Veggie Delight",
+    "description": "A delightfully crunchy combination of garden veggies.",
+    "price": 5.99,
+    "image": "https://images.unsplash.com/photo-1627279000997-bf3c50019128?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 2,
+    "title": "Subway Club",
+    "description": "A delicious combination of turkey breast, roast beef, and ham.",
+    "price": 6.99,
+    "image": "https://images.unsplash.com/photo-1583744514765-d815be1606cd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 3,
+    "title": "Italian B.M.T.",
+    "description": "Pepperoni, Genoa salami, and Black Forest Ham.",
+    "price": 7.49,
+    "image": "https://plus.unsplash.com/premium_photo-1664478291780-0c67f5fb15e6?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 4,
+    "title": "Tuna Bread",
+    "description": "Our delicious tuna sandwich.",
+    "price": 6.49,
+    "image": "https://img.freepik.com/free-photo/tuna-sandwich-with-mayo-vegetables-gray-stone-background_123827-23247.jpg?t=st=1717925249~exp=1717928849~hmac=9d87db86deab150fb232c45ce4bc3e5ef21d0acc6378b37423909c08352ff27e&w=996"
+  },
+  {
+    "id": 5,
+    "title": "Chicken Teriyaki",
+    "description": "Irresistible teriyaki glazed chicken strips.",
+    "price": 7.99,
+    "image": "https://plus.unsplash.com/premium_photo-1667807522245-ae3de2a7813a?q=80&w=1900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 6,
+    "title": "Meatball Marinara",
+    "description": "Italian style meatballs covered in marinara sauce.",
+    "price": 7.49,
+    "image": "https://img.freepik.com/free-photo/boiled-eggs-stir-fried-with-tamarind-sauce_1150-22266.jpg?t=st=1717925220~exp=1717928820~hmac=86b3677a61008158584e7b40b2cb8faa597eef17a4f92d7ec5ee24f8403b49cf&w=996"
+  },
+  {
+    "id": 7,
+    "title": "Roast Beef",
+    "description": "Slices of lean and tender roast beef.",
+    "price": 7.99,
+    "image": "https://img.freepik.com/free-photo/fried-pork-with-fried-chili-fried-onion-mint-white-plate_1150-25872.jpg?t=st=1717925313~exp=1717928913~hmac=d163bdc0e7e513e440502f31c5faa1000b28b88d5ccaaa6b0e8deebec72f93b2&w=996"
+  },
+  {
+    "id": 8,
+    "title": "Turkey Breast",
+    "description": "Sliced turkey breast, lean and delicious.",
+    "price": 6.99,
+    "image": "https://img.freepik.com/free-photo/grilled-chicken-breast-potato-tomato-greens-bbq-sauce-side-view_141793-4446.jpg?t=st=1717925335~exp=1717928935~hmac=452ba69d015fca8423136d87eb395799afbb409ac8534d5d81322c010f7d0288&w=740"
+  },
+  {
+    "id": 9,
+    "title": "Italian B.M.T.",
+    "description": "A classic sandwich with pepperoni, salami, and ham.",
+    "price": 7.99,
+    "image": "https://plus.unsplash.com/premium_photo-1681406995059-972cf4e86568?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 10,
+    "title": "Turkey Breast",
+    "description": "Oven-roasted turkey breast with your choice of fresh veggies.",
+    "price": 6.99,
+    "image": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 11,
+    "title": "Veggie Delight",
+    "description": "A delight for veggie lovers with fresh vegetables and your choice of condiments.",
+    "price": 5.99,
+    "image": "https://images.unsplash.com/photo-1676300187140-00828e014d2a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 12,
+    "title": "Chicken Teriyaki",
+    "description": "Tender chicken strips in a savory teriyaki glaze.",
+    "price": 8.49,
+    "image": "https://source.unsplash.com/?chicken,teriyaki"
+  },
+  {
+    "id": 13,
+    "title": "Meatball Marinara",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://source.unsplash.com/?meatball,marinara"
+  }
+]

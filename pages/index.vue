@@ -34,10 +34,8 @@
       <div
         class="row-span-2 flex h-full w-full flex-col justify-between rounded-xl bg-neutral-800 px-4 py-2"
       >
-        <h1 class="text-[64px] leading-[120%]">
-          <span class="font-semibold text-amber-400"
-            >SUB<span class="text-emerald-600">WAY</span></span
-          >
+        <h1 class="logo w-[60%]">
+          <img src="/images/subway.png" alt="">
         </h1>
         <p class="text-white">
           Spoil your taste buds with a selection of sandwiches, salads, and
@@ -66,12 +64,17 @@
 </template>
 
 <script setup>
-import estate1 from "/images/estate1.jpg";
 import carousel1 from "/images/resto1.jpg";
 import carousel2 from "/images/hotdog1.jpg";
 import carousel3 from "/images/sandwich1.jpg";
 
-const itemsCarousel = [estate1, carousel1, carousel2, carousel3];
+const itemsCarousel = [
+  "https://img.freepik.com/free-photo/smiley-teenagers-eating-burgers-outdoors-with-drink_23-2148666618.jpg?t=st=1717925858~exp=1717929458~hmac=d9affd7fcca57f4827e0d46189e7918256d17b4a06c184b8b7ae407011aa9500&w=1380",
+  carousel1,
+  carousel2,
+  carousel3,
+  "https://img.freepik.com/free-photo/vegan-sandwiches-lunch-beach_53876-74946.jpg?t=st=1717925813~exp=1717929413~hmac=b87d8533374394265a67b371b1a835b7d15c89358a048819b6c7bb5c419a81af&w=996",
+];
 
 const carouselRef = ref();
 

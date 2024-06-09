@@ -1,20 +1,34 @@
 <template>
   <div>
     <nav
-      class="sticky top-0 flex items-center justify-between border-b-2 border-green-700 bg-green-500 px-12 py-3"
+      class="navbar sticky top-0 z-[999] mt-2 flex items-center justify-between px-24 py-3 transition-all duration-300"
     >
       <div class="flex items-center justify-between gap-12">
-        <NuxtLink to="/" class="text-[24px] font-semibold"
-          >NuxtProducts</NuxtLink
-        >
+        <NuxtLink to="/">
+          <h1 class="text-[24px] font-semibold text-green-500">NuxtProject</h1>
+        </NuxtLink>
+        <ul class="flex gap-8 text-[20px] font-semibold text-green-700">
+          <li>
+            <NuxtLink to="/" :class="styledMenuNav">Home</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/products" :class="styledMenuNav">Menu</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/promo" :class="styledMenuNav">Promo</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/about" :class="[styledMenuNav]">About</NuxtLink>
+          </li>
+        </ul>
       </div>
 
       <UButton
-        class="rounded-lg bg-neutral-700 px-5 text-[20px] hover:bg-neutral-700/80"
-        >Login</UButton
+        class="rounded-lg bg-green-700 px-5 text-[20px] text-yellow-300 ring-inset ring-green-400 hover:bg-green-700/80 active:ring-2"
+        >Order Now</UButton
       >
     </nav>
-    <section class="mx-16 mt-4">
+    <section class="mx-24 my-4">
       <UBreadcrumb divider="/" :links="links" />
     </section>
     <!-- slot content -->
@@ -22,7 +36,7 @@
       <slot />
     </div>
 
-    <footer class="grid grid-cols-4 bg-zinc-800 px-24 py-8 text-white">
+    <footer class="mt-12 grid grid-cols-4 bg-zinc-800 px-24 py-8 text-white">
       <h1 class="col-span-2">NuxtProject</h1>
       <div class="menu-list">
         <h1>Navigation</h1>
@@ -48,7 +62,7 @@
 const transition = "transition-all duration-300";
 const links = [
   {
-    label: "Home",
+    label: "Lobby Restaurant",
     icon: "i-heroicons-home",
     to: "/",
     labelClass: `group hover:text-green-500 peer-hover:text-green-500 ${transition}`,
@@ -56,18 +70,41 @@ const links = [
   },
 
   {
-    label: "Products",
-    icon: "i-heroicons-circle-stack",
+    label: "Food Category",
+    icon: "i-heroicons-document-duplicate",
     iconClass: "iconBreadCrumb",
   },
 ];
+
+const styledMenuNav =
+  "hover:text-amber-400 transition-all duration-300 hover:border-b-2 border-amber-400";
+
+import { onMounted, onUnmounted } from "vue";
+
+const handleScroll = () => {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
 
 <style scoped>
 .router-link-exact-active {
-  color: rgb(255, 255, 255);
+  @apply text-yellow-500;
 }
-
+.scrolled {
+  @apply bg-white shadow-md;
+}
 footer {
   h1 {
     font-size: 32px;

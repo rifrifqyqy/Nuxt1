@@ -5,7 +5,11 @@
     >
       <div class="flex items-center justify-between gap-12">
         <NuxtLink to="/">
-          <h1 class="text-[24px] font-semibold text-green-500">NuxtProject</h1>
+          <img
+            src="/images/logo.png"
+            alt=""
+            class="logo w-[180px] transition-all"
+          />
         </NuxtLink>
         <ul class="flex gap-8 text-[20px] font-semibold text-green-700">
           <li>
@@ -34,7 +38,7 @@
     </div>
 
     <footer class="mt-16 grid grid-cols-4 bg-green-800 px-24 py-8 text-white">
-      <h1 class="col-span-2">NuxtProject</h1>
+      <img src="/images/subway.png" alt="" class="w-[200px] col-span-2">
       <div class="menu-list">
         <h1>Navigation</h1>
         <ul class="mt-2 flex flex-col gap-2">
@@ -64,10 +68,13 @@ import { onMounted, onUnmounted } from "vue";
 
 const handleScroll = () => {
   const navbar = document.querySelector(".navbar");
+  const logo = document.querySelector(".logo");
   if (window.scrollY > 50) {
     navbar.classList.add("scrolled");
+    logo.classList.add("logo-resize");
   } else {
     navbar.classList.remove("scrolled");
+    logo.classList.remove("logo-resize");
   }
 };
 
@@ -85,6 +92,9 @@ onUnmounted(() => {
 }
 .scrolled {
   @apply bg-white;
+}
+.logo-resize {
+  @apply scale-75;
 }
 footer {
   h1 {
