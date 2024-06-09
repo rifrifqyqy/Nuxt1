@@ -8,7 +8,7 @@
           <img
             src="/images/logo.png"
             alt=""
-            class="w-[140px] transition-all hover:scale-110"
+            class="w-[180px] scale-75 transition-all hover:scale-110"
           />
         </NuxtLink>
         <ul class="flex gap-8 text-[20px] font-semibold text-green-700">
