@@ -11,11 +11,7 @@
         :class="{ active: selectedCategory === 'breakfast' }"
         @click="setSelectedCategory('breakfast')"
       >
-        <img
-          src="/images/hotdog1.jpg"
-          alt=""
-          class="group-hover:brightness-100"
-        />
+        <img src="/images/hotdog1.jpg" alt="" :class="[styledCtgImg, '']" />
         <h1
           class="stroke-current group-hover:scale-110 group-hover:stroke-yellow-400"
         >
@@ -30,7 +26,7 @@
         <img
           src="https://img.freepik.com/free-photo/chicken-wrap_144627-33297.jpg?t=st=1717947172~exp=1717950772~hmac=57aa719457460779c21afe5b6e28d7ab6e10765506d976c3cd927027023d558a&w=996"
           alt=""
-          class="group-hover:brightness-100"
+          :class="[styledCtgImg, '']"
         />
         <h1
           class="stroke-current group-hover:scale-110 group-hover:stroke-yellow-400"
@@ -43,11 +39,7 @@
         :class="{ active: selectedCategory === 'sandwich' }"
         @click="setSelectedCategory('sandwich')"
       >
-        <img
-          src="/images/sandwich1.jpg"
-          alt=""
-          class="group-hover:brightness-100"
-        />
+        <img src="/images/sandwich1.jpg" alt="" :class="[styledCtgImg, '']" />
         <h1
           class="stroke-current group-hover:scale-110 group-hover:stroke-yellow-400"
         >
@@ -62,7 +54,7 @@
         <img
           src="https://facts.net/wp-content/uploads/2023/11/11-subway-salad-nutrition-facts-1700294617.jpg"
           alt=""
-          class="group-hover:brightness-100"
+          :class="[styledCtgImg, '']"
         />
         <h1
           class="stroke-current group-hover:scale-110 group-hover:stroke-yellow-400"
@@ -78,7 +70,7 @@
         <img
           src="https://www.auctionfactory.com/uploaded_files7/33a-soda-fountain_file_1606070592.jpg"
           alt=""
-          class="group-hover:brightness-100"
+          :class="[styledCtgImg, '']"
         />
         <h1
           class="stroke-current group-hover:scale-110 group-hover:stroke-yellow-400"
@@ -94,7 +86,7 @@
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWDXNYhsX5JQIovHUYd1eJdrGkBkBKUSfMfVRZFisDRMtqUlPZYBUaNzphfU3vUdw7uxI&usqp=CAU"
           alt=""
-          class="group-hover:brightness-100"
+          :class="[styledCtgImg, '']"
         />
         <h1
           class="stroke-current group-hover:scale-110 group-hover:stroke-yellow-400"
@@ -115,7 +107,7 @@
 definePageMeta({
   layout: "products",
 });
-import { ref, computed } from "vue";
+import { ref, computed, onMounted } from "vue";
 import productsData from "~/data/menu.json";
 
 const products = JSON.parse(JSON.stringify(productsData));
@@ -123,6 +115,7 @@ const selectedCategory = ref(null);
 
 const setSelectedCategory = (category) => {
   selectedCategory.value = category;
+  window.localStorage.setItem("selectedCategory", category);
 };
 
 const filteredProducts = computed(() => {
@@ -133,11 +126,21 @@ const filteredProducts = computed(() => {
     (product) => product.category === selectedCategory.value,
   );
 });
+
+const styledCtgImg = " group-hover:brightness-100 group-hover:grayscale-0";
+
+onMounted(() => {
+  const storedCategory = window.localStorage.getItem("selectedCategory");
+  if (storedCategory && !selectedCategory.value) {
+    selectedCategory.value = storedCategory;
+  }
+});
 </script>
+
 
 <style scoped>
 .prods-container {
-  @apply grid grid-cols-4 gap-4;
+  @apply grid h-fit grid-cols-4 gap-4;
 }
 .sidebar-category {
   @apply sticky top-[100px] flex h-max w-[280px] flex-col gap-2 rounded-lg border border-green-600 p-2;

@@ -5,7 +5,11 @@
     >
       <div class="flex items-center justify-between gap-12">
         <NuxtLink to="/">
-          <img src="/images/logo.png" alt="" class="w-[140px] hover:scale-110 transition-all"
+          <img
+            src="/images/logo.png"
+            alt=""
+            class="w-[140px] transition-all hover:scale-110"
+          />
         </NuxtLink>
         <ul class="flex gap-8 text-[20px] font-semibold text-green-700">
           <li>
@@ -32,9 +36,11 @@
       <UBreadcrumb divider="/" :links="links" />
     </section>
     <!-- slot content -->
-    <div>
-      <slot />
-    </div>
+    <keep-alive>
+      <div>
+        <router-view />
+      </div>
+    </keep-alive>
 
     <footer class="mt-12 grid grid-cols-4 bg-zinc-800 px-24 py-8 text-white">
       <h1 class="col-span-2">NuxtProject</h1>

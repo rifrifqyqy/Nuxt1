@@ -134,5 +134,117 @@
     "description": "Italian-style meatballs with marinara sauce and melted cheese.",
     "price": 7.49,
     "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Untitled-design-32-680x680.png"
+  },
+  {
+    "id": 18,
+    "title": "Cheese & Egg",
+    "category": "breakfast",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Cheese-Egg-680x680.png"
+  },
+  {
+    "id": 19,
+    "title": "Tuna & Egg",
+    "category": "breakfast",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Tuna-Egg-680x680.png"
+  },
+  {
+    "id": 21,
+    "title": "Chicken Slice & Egg",
+    "category": "breakfast",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Chicken-Ham-Egg-680x680.png"
+  },
+  {
+    "id": 22,
+    "title": "Breakfast Strips & Egg",
+    "category": "breakfast",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Breakfast-Strip-Egg-680x680.png"
+  },
+  {
+    "id": 23,
+    "title": "Oatmeal Raisin Cookies",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/png-transparent-oatmeal-raisin-cookies-chocolate-chip-cookie-peanut-butter-cookie-schmackary-s-baking-biscuit-680x680.png"
+  },
+  {
+    "id": 24,
+    "title": "Chocolate Chips Cookie",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/RPLC-chocolatechipcookie_PR_PR-1-680x680.png"
+  },
+  {
+    "id": 25,
+    "title": "Double Chocolate Chips Cookie",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/RPLC-doublechocolatechipcookie-1-680x680.png"
+  },
+  {
+    "id": 26,
+    "title": "White Chip Macadamia Nut Cookie",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/RPLC-whitechipmacadamianutcookie-1-680x680.png"
+  },
+  {
+    "id": 27,
+    "title": "Chicken Slice & Cheese",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Chicken-Ham-_-Cheese-Toastie-680x680.png"
+  },
+  {
+    "id": 28,
+    "title": "Egg Mayo Toasty",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/09/Egg-Mayo-Toastie-680x680.png"
+  },
+  {
+    "id": 29,
+    "title": "Mushroom Soup",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/mushroom-soup-680x680.png"
+  },
+  {
+    "id": 30,
+    "title": "Chicken Cream Soup",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/mushroom-soup-680x680.png"
+  },
+  {
+    "id": 31,
+    "title": "Subway Baked Waffle Fries",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2023/08/Waffle-Fries.jpg"
+  },
+  {
+    "id": 32,
+    "title": "Subway Mac & Cheese",
+    "category": "sides",
+    "description": "Italian-style meatballs with marinara sauce and melted cheese.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2024/04/Mac-Cheese.jpg"
   }
 ]

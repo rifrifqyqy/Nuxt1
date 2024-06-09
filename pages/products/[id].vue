@@ -1,17 +1,32 @@
 <template>
-  <h1>Prodouct details for {{ products.id }}</h1>
-  <p>{{ products.description }}</p>
-  <h2>{{ products.price }}</h2>
+  <div v-if="product">
+    <h1>Product details for {{ product.id }} {{ product.title }}</h1>
+    <img :src="product.image" alt="" />
+    <p>{{ product.description }}</p>
+    <h2>{{ formattedPrice }}</h2>
+  </div>
+  <div v-else>
+    <p>Product not found</p>
+  </div>
 </template>
 
 <script setup>
-const { id } = useRoute().params;
-definePageMeta({
-  layout: "products",
-});
-const uri = "https://fakestoreapi.com/products/" + id;
+import { ref, computed } from "vue";
+import { useRoute } from "vue-router";
+import productsData from "~/data/menu.json";
 
-const { data: products } = await useFetch(uri, { key: id });
+const route = useRoute();
+const id = Number(route.params.id); // Convert id to a number
+const products = JSON.parse(JSON.stringify(productsData));
+const product = ref(products.find((product) => product.id === id));
+
+// Compute formatted price
+const formattedPrice = computed(() => {
+  if (product.value) {
+    return `$${product.value.price.toFixed(2)}`;
+  }
+  return "";
+});
 </script>
 
 <style scoped></style>
