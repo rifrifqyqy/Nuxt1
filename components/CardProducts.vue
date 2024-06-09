@@ -10,7 +10,7 @@
         <h2 class="price">{{ formatPrice(products.price) }}</h2>
       </div>
     </NuxtLink>
-    <UButton block class="mt-4">Lihat</UButton>
+    <UButton block class="mt-4 text-xl bg-green-600 hover:bg-green-600/80">Lihat</UButton>
   </div>
 </template>
 
@@ -26,7 +26,7 @@ const formatPrice = (price) => {
 
 <style scoped>
 .card {
-  @apply flex h-full max-h-fit w-[300px] flex-col justify-between rounded-lg p-2 shadow-md;
+  @apply flex h-fit max-h-fit w-[260px] flex-col justify-between rounded-lg p-2 shadow-md;
 
   .title {
     @apply text-2xl font-semibold text-green-600;

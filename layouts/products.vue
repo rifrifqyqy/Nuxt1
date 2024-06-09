@@ -5,7 +5,7 @@
     >
       <div class="flex items-center justify-between gap-12">
         <NuxtLink to="/">
-          <h1 class="text-[24px] font-semibold text-green-500">NuxtProject</h1>
+          <img src="/images/logo.png" alt="" class="w-[140px] hover:scale-110 transition-all"
         </NuxtLink>
         <ul class="flex gap-8 text-[20px] font-semibold text-green-700">
           <li>
@@ -28,7 +28,7 @@
         >Order Now</UButton
       >
     </nav>
-    <section class="mx-24 my-4">
+    <section class="mx-12 my-4">
       <UBreadcrumb divider="/" :links="links" />
     </section>
     <!-- slot content -->
