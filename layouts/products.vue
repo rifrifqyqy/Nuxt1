@@ -108,7 +108,7 @@ onUnmounted(() => {
   @apply text-yellow-500;
 }
 .scrolled {
-  @apply bg-white shadow-md;
+  @apply border-b border-green-600 bg-white;
 }
 footer {
   h1 {

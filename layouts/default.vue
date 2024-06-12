@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav
-      class="navbar sticky top-0 z-[999] mt-2 flex items-center justify-between rounded-xl px-24 py-3 transition-all duration-300 max-md:px-8"
+      class="navbar sticky top-0 z-[999] mt-2 flex items-center justify-between px-24 py-3 transition-all duration-300 max-md:px-8"
     >
       <div class="flex items-center justify-between gap-12">
         <NuxtLink to="/">
@@ -94,7 +94,7 @@ onUnmounted(() => {
   @apply text-amber-400;
 }
 .scrolled {
-  @apply bg-white;
+  @apply border-b border-green-600 bg-white;
 }
 .logo-resize {
   @apply scale-75;
