@@ -25,8 +25,12 @@
         modifier: 1,
         slideShadows: true,
       }"
+      :autoplay="{
+        delay: 3000,
+        disableOnInteraction: true,
+      }"
     >
-      <swiper-slide v-for="(slide, id) in slides" :key="slide.id">
+      <swiper-slide v-for="slide in slides" :key="slide.id">
         <img :src="slide.imgUrl" alt="" />
       </swiper-slide>
     </Swiper>
@@ -51,8 +55,12 @@ import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 
 // import required modules
-import { Pagination, Navigation, EffectCoverflow } from "swiper/modules";
-const modules = [Pagination, Navigation];
+import {
+  Pagination,
+  Navigation,
+  EffectCoverflow,
+  Autoplay,
+} from "swiper/modules";
 
 export default {
   components: {
@@ -60,7 +68,7 @@ export default {
     SwiperSlide,
   },
   setup() {
-    const modules = [Pagination, Navigation, EffectCoverflow];
+    const modules = [Pagination, Navigation, EffectCoverflow, Autoplay];
 
     const slides = [
       {
@@ -69,23 +77,23 @@ export default {
       },
       {
         id: 2,
-        imgUrl: "/images/sandwich1.jpg",
+        imgUrl: "/images/ads2.png",
       },
       {
         id: 3,
-        imgUrl: "/images/hotdog1.jpg",
+        imgUrl: "/images/kwave.png",
       },
       {
         id: 4,
-        imgUrl: "/images/ads1.png",
+        imgUrl: "/images/adsway3.png",
       },
       {
-        id: 4,
-        imgUrl: "/images/hotdog1.jpg",
+        id: 5,
+        imgUrl: "/images/adsway1.png",
       },
       {
-        id: 4,
-        imgUrl: "/images/hotdog1.jpg",
+        id: 6,
+        imgUrl: "/images/adsway2.png",
       },
     ];
     return { modules, slides };
@@ -101,17 +109,11 @@ export default {
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-
-  @apply h-[350px] w-[350px] overflow-hidden rounded-lg bg-white;
+  @apply h-[350px] w-[350px] overflow-hidden rounded-lg;
 }
 
 .swiper-slide img {
-  @apply h-full w-full object-cover object-center;
+  @apply h-full w-full;
 }
 
 .swiper-button-prev,
@@ -127,10 +129,6 @@ export default {
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   @apply bg-opacity-80;
-}
-.swiper-slide.active-slide {
-  transform: scale(1.2);
-  opacity: 1;
 }
 
 .swiper-pagination {
