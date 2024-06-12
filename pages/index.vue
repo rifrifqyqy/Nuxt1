@@ -1,41 +1,14 @@
 <template>
   <main class="mt-4 grid grid-cols-2 gap-4 max-md:grid-cols-1">
-    <div class="container relative mx-auto">
-      <UCarousel
-        ref="carouselRef"
-        v-slot="{ item }"
-        :items="itemsCarousel"
-        :prev-button="{
-          color: 'gray',
-          icon: 'i-heroicons-arrow-left-20-solid',
-          class: 'mt-[30%] max-md:mt-[110%] text-green-500',
-        }"
-        :next-button="{
-          color: 'gray',
-          icon: 'i-heroicons-arrow-right-20-solid',
-          class:
-            'mt-[30%] max-md:mt-[110%] left-0 w-fit ml-[64px] text-green-500',
-        }"
-        :ui="{
-          item: 'basis-full',
-        }"
-        class="overflow-hidden rounded-xl"
-        arrows
-      >
-        <img
-          :src="item"
-          class="h-[450px] w-full object-cover brightness-75"
-          draggable="false"
-        />
-      </UCarousel>
-    </div>
-
+    <!-- carousel -->
+    <HomeCarousel />
+    <!-- carousel end -->
     <article class="grid gap-4">
       <div
         class="row-span-2 flex h-full w-full flex-col justify-between rounded-xl bg-neutral-800 px-4 py-2"
       >
         <h1 class="logo w-[60%]">
-          <img src="/images/subway.png" alt="">
+          <img src="/images/subway.png" alt="" />
         </h1>
         <p class="text-white">
           Spoil your taste buds with a selection of sandwiches, salads, and
@@ -46,7 +19,7 @@
 
       <NuxtLink to="/products" class="row-span-1 grid grid-cols-2 gap-4">
         <div
-          class="bg-hotdog1 group relative flex h-full border-spacing-y-6 cursor-pointer overflow-hidden rounded-xl bg-cover bg-center"
+          class="group relative flex h-full border-spacing-y-6 cursor-pointer overflow-hidden rounded-xl bg-hotdog1 bg-cover bg-center"
         >
           <div
             class="duration-600 absolute z-[2] h-full w-full bg-black/40 transition-all group-hover:bg-black/0"
@@ -57,44 +30,77 @@
             OUR MENU
           </h1>
         </div>
-        <h2 class="rounded-xl bg-yellow-500">WAYAYA</h2>
+        <div
+          class="group relative flex h-full border-spacing-y-6 cursor-pointer overflow-hidden rounded-xl bg-resto1 bg-cover bg-center"
+        >
+          <div
+            class="duration-600 absolute z-[2] h-full w-full bg-black/40 transition-all group-hover:bg-black/0"
+          />
+          <h1
+            class="inset-0 z-10 m-auto text-2xl font-bold text-amber-300 transition-all group-hover:scale-110"
+          >
+            SUBWAY PROMO
+          </h1>
+        </div>
       </NuxtLink>
     </article>
   </main>
+
+  <section
+    class="mx-auto mt-12 flex w-fit overflow-hidden rounded-lg border border-yellow-500"
+  >
+    <HomeLabel imgSrc="/images/vege.png" styled="style">
+      <template #text>
+        Product from <br />
+        Organic Farm
+      </template>
+    </HomeLabel>
+    <HomeLabel imgSrc="/images/onlinefood.png" styled="style">
+      <template #text>
+        Online Deliveries <br />
+        Available
+      </template>
+    </HomeLabel>
+    <HomeLabel imgSrc="/images/onlinefood.png" styled="style">
+      <template #text>
+        Promotion of <br />
+        The Week
+      </template>
+    </HomeLabel>
+    <HomeLabel imgSrc="/images/onlinefood.png" styled="style">
+      <template #text>
+        Extra Size <br />
+        Extra YUMMYY
+      </template>
+    </HomeLabel>
+  </section>
+  <div class="mt-12">
+    <h1 class="styled h1">
+      <span>#SUBWAYINDONESIA</span>
+      PROMO
+    </h1>
+    <HomeCarouselPromo />
+  </div>
 </template>
 
-<script setup>
-import carousel1 from "/images/resto1.jpg";
-import carousel2 from "/images/hotdog1.jpg";
-import carousel3 from "/images/sandwich1.jpg";
-
-const itemsCarousel = [
-  "https://img.freepik.com/free-photo/smiley-teenagers-eating-burgers-outdoors-with-drink_23-2148666618.jpg?t=st=1717925858~exp=1717929458~hmac=d9affd7fcca57f4827e0d46189e7918256d17b4a06c184b8b7ae407011aa9500&w=1380",
-  carousel1,
-  carousel2,
-  carousel3,
-  "https://img.freepik.com/free-photo/vegan-sandwiches-lunch-beach_53876-74946.jpg?t=st=1717925813~exp=1717929413~hmac=b87d8533374394265a67b371b1a835b7d15c89358a048819b6c7bb5c419a81af&w=996",
-];
-
-const carouselRef = ref();
-
-onMounted(() => {
-  setInterval(() => {
-    if (!carouselRef.value) return;
-
-    if (carouselRef.value.page === carouselRef.value.pages) {
-      return carouselRef.value.select(0);
-    }
-
-    carouselRef.value.next();
-  }, 3000);
-});
+<script>
+const styled = "px-24";
 </script>
 
 <style scoped>
 nav {
   li {
     color: rgb(255, 255, 255);
+  }
+}
+.style {
+  @apply border-b-[3px] border-transparent px-12 py-6 hover:border-green-600;
+}
+.styled.h1 {
+  @apply text-center text-3xl font-bold text-green-600;
+
+  span {
+    @apply italic;
   }
 }
 </style>

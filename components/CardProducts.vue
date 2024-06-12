@@ -10,7 +10,12 @@
         <h2 class="price">{{ formatPrice(products.price) }}</h2>
       </div>
     </NuxtLink>
-    <UButton block class="mt-4 text-xl bg-green-600 hover:bg-green-600/80">Lihat</UButton>
+    <UButton
+      :to="`/products/${products.id} `"
+      block
+      class="mt-4 bg-green-600 text-xl hover:bg-green-600/80"
+      >Lihat
+    </UButton>
   </div>
 </template>
 

@@ -1,17 +1,19 @@
 <template>
   <div>
     <nav
-      class="navbar sticky top-0 z-[999] mt-2 flex items-center justify-between rounded-xl px-24 py-3 transition-all duration-300"
+      class="navbar sticky top-0 z-[999] mt-2 flex items-center justify-between rounded-xl px-24 py-3 transition-all duration-300 max-md:px-8"
     >
       <div class="flex items-center justify-between gap-12">
         <NuxtLink to="/">
           <img
             src="/images/logo.png"
             alt=""
-            class="logo w-[180px] transition-all"
+            class="logo w-[180px] transition-all max-md:w-[60px]"
           />
         </NuxtLink>
-        <ul class="flex gap-8 text-[20px] font-semibold text-green-700">
+        <ul
+          class="flex gap-8 text-[20px] font-semibold text-green-700 max-md:gap-2"
+        >
           <li>
             <NuxtLink to="/" :class="styledMenuNav">Home</NuxtLink>
           </li>
@@ -27,18 +29,19 @@
         </ul>
       </div>
 
-      <UButton
-        class="rounded-lg bg-green-700 px-5 text-[20px] text-yellow-300 ring-inset ring-green-400 hover:bg-green-700/80 active:ring-2"
-        >Order Now</UButton
+      <buttonPrimary
+        styled="rounded-lg bg-green-700 px-5 text-[20px] text-yellow-300 ring-inset ring-green-400 hover:opacity-80 active:ring-2"
       >
+        Order Now
+      </buttonPrimary>
     </nav>
 
-    <div class="mx-24">
+    <div class="mx-24 max-md:mx-8">
       <slot />
     </div>
 
     <footer class="mt-16 grid grid-cols-4 bg-green-800 px-24 py-8 text-white">
-      <img src="/images/subway.png" alt="" class="w-[200px] col-span-2">
+      <img src="/images/subway.png" alt="" class="col-span-2 w-[200px]" />
       <div class="menu-list">
         <h1>Navigation</h1>
         <ul class="mt-2 flex flex-col gap-2">
@@ -62,7 +65,7 @@
 <!-- el scripto -->
 <script setup>
 const styledMenuNav =
-  "hover:text-amber-400 transition-all duration-300 hover:border-b-2 border-amber-400";
+  "hover:text-amber-400 transition-all duration-300 hover:border-b-2 border-amber-400 max-md:text-[14px]";
 
 import { onMounted, onUnmounted } from "vue";
 

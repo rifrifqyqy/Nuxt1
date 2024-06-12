@@ -98,6 +98,7 @@
     <div class="prods-container">
       <div v-for="p in filteredProducts" :key="p.id">
         <CardProducts :products="p" />
+       
       </div>
     </div>
   </div>
@@ -107,7 +108,9 @@
 definePageMeta({
   layout: "products",
 });
-import { ref, computed, onMounted } from "vue";
+const styledCtgImg = "group-hover:brightness-100 group-hover:grayscale-0";
+
+import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 import productsData from "~/data/menu.json";
 
 const products = JSON.parse(JSON.stringify(productsData));
@@ -127,16 +130,25 @@ const filteredProducts = computed(() => {
   );
 });
 
-const styledCtgImg = " group-hover:brightness-100 group-hover:grayscale-0";
-
 onMounted(() => {
   const storedCategory = window.localStorage.getItem("selectedCategory");
   if (storedCategory && !selectedCategory.value) {
     selectedCategory.value = storedCategory;
   }
-});
-</script>
 
+  // Add event listener to clear localStorage on refresh
+  window.addEventListener("beforeunload", handleBeforeUnload);
+});
+
+// Clean up the event listener when the component is unmounted
+onBeforeUnmount(() => {
+  window.removeEventListener("beforeunload", handleBeforeUnload);
+});
+
+const handleBeforeUnload = () => {
+  window.localStorage.removeItem("selectedCategory");
+};
+</script>
 
 <style scoped>
 .prods-container {

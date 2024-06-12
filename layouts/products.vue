@@ -36,11 +36,10 @@
       <UBreadcrumb divider="/" :links="links" />
     </section>
     <!-- slot content -->
-    <keep-alive>
-      <div>
-        <router-view />
-      </div>
-    </keep-alive>
+
+    <div>
+      <slot />
+    </div>
 
     <footer class="mt-12 grid grid-cols-4 bg-zinc-800 px-24 py-8 text-white">
       <h1 class="col-span-2">NuxtProject</h1>
