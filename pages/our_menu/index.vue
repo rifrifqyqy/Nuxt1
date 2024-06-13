@@ -98,7 +98,6 @@
     <div class="prods-container">
       <div v-for="p in filteredProducts" :key="p.id">
         <CardProducts :products="p" />
-       
       </div>
     </div>
   </div>
@@ -159,7 +158,7 @@ const handleBeforeUnload = () => {
 }
 
 .ctg-box {
-  @apply relative flex h-[100px] cursor-pointer overflow-hidden rounded-lg hover:ring-2 hover:ring-yellow-500;
+  @apply relative flex h-[50px] cursor-pointer overflow-hidden rounded-lg transition-all hover:ring-2 hover:ring-yellow-500;
   h1 {
     @apply m-auto text-3xl font-semibold text-yellow-500 transition-all group-hover:scale-110;
   }
@@ -168,9 +167,9 @@ const handleBeforeUnload = () => {
   }
 }
 .ctg-box.active {
-  @apply ring-2 ring-yellow-500;
+  @apply h-[100px] ring-2 ring-yellow-500;
   h1 {
-    @apply text-zinc-100;
+    @apply rounded-lg bg-green-600 px-5 py-1 text-zinc-100;
   }
   img {
     @apply brightness-75 grayscale-0;

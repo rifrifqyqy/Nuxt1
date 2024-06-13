@@ -1,6 +1,6 @@
 <template>
   <div class="card bg-zinc-50">
-    <NuxtLink :to="`/products/${products.id} `">
+    <NuxtLink :to="`/our_menu/${products.id} `">
       <div class="h-[200px] w-full overflow-hidden rounded-md">
         <img :src="products.image" alt="" class="h-full w-full object-cover" />
       </div>
@@ -11,7 +11,7 @@
       </div>
     </NuxtLink>
     <UButton
-      :to="`/products/${products.id} `"
+      :to="`/our_menu/${products.id} `"
       block
       class="mt-4 bg-green-600 text-xl hover:bg-green-600/80"
       >Lihat

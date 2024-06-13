@@ -17,32 +17,36 @@
         </p>
       </div>
 
-      <NuxtLink to="/products" class="row-span-1 grid grid-cols-2 gap-4">
-        <div
-          class="group relative flex h-full border-spacing-y-6 cursor-pointer overflow-hidden rounded-xl bg-hotdog1 bg-cover bg-center"
-        >
+      <section class="row-span-1 grid grid-cols-2 gap-4">
+        <NuxtLink to="/our_menu">
           <div
-            class="duration-600 absolute z-[2] h-full w-full bg-black/40 transition-all group-hover:bg-black/0"
-          />
-          <h1
-            class="inset-0 z-10 m-auto text-2xl font-bold text-amber-300 transition-all group-hover:scale-110"
+            class="group relative flex h-full border-spacing-y-6 cursor-pointer overflow-hidden rounded-xl bg-hotdog1 bg-cover bg-center"
           >
-            OUR MENU
-          </h1>
-        </div>
-        <div
-          class="group relative flex h-full border-spacing-y-6 cursor-pointer overflow-hidden rounded-xl bg-resto1 bg-cover bg-center"
-        >
+            <div
+              class="duration-600 absolute z-[2] h-full w-full bg-black/40 transition-all group-hover:bg-black/0"
+            />
+            <h1
+              class="inset-0 z-10 m-auto text-2xl font-bold text-amber-300 transition-all group-hover:scale-110"
+            >
+              OUR MENU
+            </h1>
+          </div>
+        </NuxtLink>
+        <NuxtLink to="/promo">
           <div
-            class="duration-600 absolute z-[2] h-full w-full bg-black/40 transition-all group-hover:bg-black/0"
-          />
-          <h1
-            class="inset-0 z-10 m-auto text-2xl font-bold text-amber-300 transition-all group-hover:scale-110"
+            class="group relative flex h-full border-spacing-y-6 cursor-pointer overflow-hidden rounded-xl bg-resto1 bg-cover bg-center"
           >
-            SUBWAY PROMO
-          </h1>
-        </div>
-      </NuxtLink>
+            <div
+              class="duration-600 absolute z-[2] h-full w-full bg-black/40 transition-all group-hover:bg-black/0"
+            />
+            <h1
+              class="inset-0 z-10 m-auto text-2xl font-bold text-amber-300 transition-all group-hover:scale-110"
+            >
+              SUBWAY PROMO
+            </h1>
+          </div>
+        </NuxtLink>
+      </section>
     </article>
   </main>
 

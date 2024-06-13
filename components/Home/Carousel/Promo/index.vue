@@ -37,7 +37,7 @@
             <img src="/images/subwaylogo.png" alt="" class="w-[42px]" />
             <div>
               <h1>Subway Indonesia</h1>
-              <p>20 Juni 2024</p>
+              <p>#subwayindonesia</p>
             </div>
           </div>
         </div>
@@ -104,6 +104,11 @@ export default {
         id: 6,
         imgUrl: "/images/adsway2.png",
       },
+      {
+        id: 7,
+        imgUrl:
+          "https://www.subway.co.id/wp-content/uploads/2021/08/Screenshot-2023-05-29-111333.png",
+      },
     ];
     return { modules, slides };
   },
@@ -112,8 +117,7 @@ export default {
 
 <style>
 .swiper {
-  
-  @apply h-full w-[1200px] overflow-hidden px-12;
+  @apply h-full overflow-hidden px-12 max-sm:w-[400px] md:w-[600px] lg:w-[800px] xl:w-[1200px];
 }
 
 .swiper-slide {
@@ -143,7 +147,7 @@ export default {
       @apply text-lg font-semibold text-zinc-800;
     }
     p {
-      @apply text-sm text-zinc-600;
+      @apply text-sm text-amber-500 italic;
     }
   }
 }
