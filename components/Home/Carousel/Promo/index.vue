@@ -23,7 +23,7 @@
         stretch: 0,
         depth: 150,
         modifier: 1,
-        slideShadows: true,
+        slideShadows: false,
       }"
       :autoplay="{
         delay: 3000,
@@ -31,7 +31,16 @@
       }"
     >
       <swiper-slide v-for="slide in slides" :key="slide.id">
-        <img :src="slide.imgUrl" alt="" />
+        <div class="photoframe">
+          <img :src="slide.imgUrl" alt="" class="photoimg" />
+          <div class="profile">
+            <img src="/images/subwaylogo.png" alt="" class="w-[42px]" />
+            <div>
+              <h1>Subway Indonesia</h1>
+              <p>20 Juni 2024</p>
+            </div>
+          </div>
+        </div>
       </swiper-slide>
     </Swiper>
     <div class="swiper-button-prev btnprev">
@@ -103,16 +112,16 @@ export default {
 
 <style>
 .swiper {
-  width: 100%;
-  height: 100%;
-  @apply w-[1200px] overflow-hidden px-12;
+  
+  @apply h-full w-[1200px] overflow-hidden px-12;
 }
 
 .swiper-slide {
-  @apply h-[350px] w-[350px] overflow-hidden rounded-lg;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  @apply h-fit w-[350px] overflow-hidden;
 }
 
-.swiper-slide img {
+.swiper-slide .photoimg {
   @apply h-full w-full;
 }
 
@@ -125,7 +134,19 @@ export default {
     @apply hidden;
   }
 }
+.photoframe {
+  @apply bg-white px-4 py-4;
 
+  .profile {
+    @apply mt-4 flex items-center gap-2;
+    h1 {
+      @apply text-lg font-semibold text-zinc-800;
+    }
+    p {
+      @apply text-sm text-zinc-600;
+    }
+  }
+}
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   @apply bg-opacity-80;

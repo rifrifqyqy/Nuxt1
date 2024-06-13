@@ -47,7 +47,7 @@
   </main>
 
   <section
-    class="mx-auto mt-12 flex w-fit overflow-hidden rounded-lg border border-yellow-500"
+    class="mx-auto mt-12 flex w-fit flex-wrap overflow-hidden rounded-lg border border-yellow-500 bg-white"
   >
     <HomeLabel imgSrc="/images/vege.png" styled="style">
       <template #text>
@@ -94,7 +94,7 @@ nav {
   }
 }
 .style {
-  @apply border-b-[3px] border-transparent px-12 py-6 hover:border-green-600;
+  @apply w-max border-b-[3px] border-transparent px-12 py-6 hover:border-green-600 max-md:px-4 max-md:text-[14px];
 }
 .styled.h1 {
   @apply text-center text-3xl font-bold text-green-600;
