@@ -1,4 +1,8 @@
 <template>
+  <Head>
+    <Title>Subway | {{ product.title }}</Title>
+    <Meta name="description" :content="product.description" />
+  </Head>
   <div v-if="product">
     <h1>Product details for {{ product.id }} {{ product.title }}</h1>
     <img :src="product.image" alt="" />

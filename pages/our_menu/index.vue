@@ -107,6 +107,10 @@
 definePageMeta({
   layout: "products",
 });
+useHead({
+  title: "Subway | Menu",
+  meta: [{ name: "description", content: "Subway Menus" }],
+});
 const styledCtgImg = "group-hover:brightness-100 group-hover:grayscale-0";
 
 import { ref, computed, onMounted, onBeforeUnmount } from "vue";

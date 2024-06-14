@@ -16,7 +16,7 @@
             <NuxtLink to="/" :class="styledMenuNav">Home</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/products" :class="styledMenuNav">Menu</NuxtLink>
+            <NuxtLink to="/our_menu" :class="styledMenuNav">Menu</NuxtLink>
           </li>
           <li>
             <NuxtLink to="/promo" :class="styledMenuNav">Promo</NuxtLink>
@@ -47,16 +47,18 @@
         <h1>Navigation</h1>
         <ul class="mt-2 flex flex-col gap-2">
           <li><NuxtLink to="/">Home</NuxtLink></li>
+          <li><NuxtLink to="/our_menu">Menu</NuxtLink></li>
+          <li><NuxtLink to="/promo">Promo</NuxtLink></li>
           <li><NuxtLink to="/about">About</NuxtLink></li>
-          <li><NuxtLink to="/products">Products</NuxtLink></li>
         </ul>
       </div>
       <div class="menu-list">
         <h1>Follow Us</h1>
         <ul class="mt-2 flex flex-col gap-2">
           <li><NuxtLink to="/">Home</NuxtLink></li>
+          <li><NuxtLink to="/our_menu">Menu</NuxtLink></li>
+          <li><NuxtLink to="/promo">Promo</NuxtLink></li>
           <li><NuxtLink to="/about">About</NuxtLink></li>
-          <li><NuxtLink to="/products">Products</NuxtLink></li>
         </ul>
       </div>
     </footer>
