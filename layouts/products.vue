@@ -82,7 +82,13 @@
       <div class="col-span-5 mt-4 flex justify-center bg-green-700 py-2">
         <h1 class="text-md w-fit text-white">
           © 2024 Subway IP LLC by PT Sari Sandwich Indonesia | All rights
-          reserved. Designed by Rifqy Hamdani | Made with Nuxt3
+          reserved. Designed by Rifqy Hamdani |
+          <span class="ml-2">Made with</span>
+          <span
+            class="ml-2 rounded-md bg-zinc-700 px-3 py-1 font-semibold text-green-400 hover:opacity-80"
+          >
+            <NuxtLink to="https://nuxt.com/">Nuxt3</NuxtLink>
+          </span>
         </h1>
       </div>
     </footer>
@@ -137,7 +143,6 @@ onUnmounted(() => {
   @apply border-b border-green-600 bg-white;
 }
 footer {
- 
   section .menu-list {
     h1 {
       font-size: 20px;
