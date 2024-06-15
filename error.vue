@@ -26,7 +26,7 @@ const props = defineProps({
   </main>
 </template>
 
-<style>
+<style scoped>
 body,
 html {
   @apply bg-zinc-50;
