@@ -9,7 +9,7 @@
 <script setup>
 import { twMerge } from "tailwind-merge";
 const props = defineProps({
-  styled: {
+  styled: { 
     type: String,
     default: "",
   },

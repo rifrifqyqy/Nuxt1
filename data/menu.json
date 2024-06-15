@@ -1,35 +1,35 @@
 [
   {
     "id": 1,
-    "title": "Veggie Delight",
+    "title": "Cola",
     "description": "A delightfully crunchy combination of garden veggies.",
-    "category": "salad",
+    "category": "drink",
     "price": 5.99,
-    "image": "https://images.unsplash.com/photo-1627279000997-bf3c50019128?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "/images/subwaycola.png"
   },
   {
     "id": 2,
-    "title": "Subway Club",
-    "description": "A delicious combination of turkey breast, roast beef, and ham.",
-    "category": "sandwich",
+    "title": "Coffe Latte 8OZ",
+    "description": "A Coffe Latte",
+    "category": "drink",
     "price": 6.99,
-    "image": "https://images.unsplash.com/photo-1583744514765-d815be1606cd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/coffee-1-680x680.png"
   },
   {
     "id": 3,
-    "title": "Italian B.M.T.",
-    "description": "Pepperoni, Genoa salami, and Black Forest Ham.",
-    "category": "salad",
+    "title": "Spiva Water 500ml",
+    "description": "Just a Mineral waters",
+    "category": "drink",
     "price": 7.49,
-    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Italian-BMT-Salad.png"
+    "image": "/images/mineralwater.png"
   },
   {
-    "id": 4,
-    "title": "Ultimate Cheese Steak",
+    "id": 3,
+    "title": "Breadballs Marinara",
     "description": "Terjunlah ke kenikmatan yang tak terbantahkan dengan Ultimate Cheese Steak kami. Daging sapi panggang yang lembut dan juicy disajikan dengan potongan bawang dan paprika yang digoreng sempurna, semuanya dilumuri oleh lapisan tebal keju cheddar dan mozzarella yang melumer. Setiap gigitan adalah perpaduan sempurna dari rasa gurih dan lembut, membuat setiap orang kembali meminta lebih.",
     "category": "sandwich",
     "price": 6.49,
-    "image": "https://www.subway.co.id/wp-content/uploads/2024/01/Desain-tanpa-judul-61-680x680.png"
+    "image": "https://www.subway.com.my/images/menu/Meatball-Marinara.webp"
   },
   {
     "id": 5,

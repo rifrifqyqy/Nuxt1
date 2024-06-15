@@ -40,23 +40,49 @@
       <slot />
     </div>
 
-    <footer class="mt-16 grid grid-cols-4 bg-green-800 px-24 py-8 text-white">
-      <img src="/images/subway.png" alt="" class="col-span-2 w-[200px]" />
-      <div class="menu-list">
-        <h1>Navigation</h1>
-        <ul class="mt-2 flex flex-col gap-2">
-          <li><NuxtLink to="/">Home</NuxtLink></li>
-          <li><NuxtLink to="/about">About</NuxtLink></li>
-          <li><NuxtLink to="/our_menu">Menu</NuxtLink></li>
-        </ul>
-      </div>
-      <div class="menu-list">
-        <h1>Follow Us</h1>
-        <ul class="mt-2 flex flex-col gap-2">
-          <li><NuxtLink to="/">Home</NuxtLink></li>
-          <li><NuxtLink to="/about">About</NuxtLink></li>
-          <li><NuxtLink to="/our_menu">Products</NuxtLink></li>
-        </ul>
+    <footer class="mt-16 bg-green-800">
+      <section class="grid grid-cols-5 px-24 py-12 text-white">
+        <img src="/images/subway.png" alt="" class="col-span-2 w-[200px]" />
+        <div class="menu-list">
+          <h1>Navigation</h1>
+          <ul class="mt-2 flex flex-col gap-2">
+            <li><NuxtLink to="/">Home</NuxtLink></li>
+            <li><NuxtLink to="/about">About</NuxtLink></li>
+            <li><NuxtLink to="/our_menu">Menu</NuxtLink></li>
+          </ul>
+        </div>
+        <div class="menu-list">
+          <h1>Follow Us</h1>
+          <ul class="mt-2 flex flex-col gap-2">
+            <li><NuxtLink to="/">Home</NuxtLink></li>
+            <li><NuxtLink to="/about">About</NuxtLink></li>
+            <li><NuxtLink to="/our_menu">Menu</NuxtLink></li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h1 class="text-xl">Stay Connected</h1>
+          <form action="" method="post" class="flex w-fit">
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="youremail@email.com"
+              class="px-4 py-3 text-green-600"
+            />
+            <buttonPrimary
+              styled="rounded-none bg-yellow-500 p-0 h-full w-max flex p-2"
+            >
+              <img src="/images/Send.svg" alt="" class="h-full w-full" />
+            </buttonPrimary>
+          </form>
+        </div>
+      </section>
+
+      <div class="col-span-5 mt-4 flex justify-center bg-green-700 py-2">
+        <h1 class="text-md w-fit text-white">
+          © 2024 Subway IP LLC by PT Sari Sandwich Indonesia | All rights
+          reserved. Designed by Rifqy Hamdani
+        </h1>
       </div>
     </footer>
   </div>
@@ -100,11 +126,7 @@ onUnmounted(() => {
   @apply scale-75;
 }
 footer {
-  h1 {
-    font-size: 32px;
-    font-weight: 600;
-  }
-  .menu-list {
+  section .menu-list {
     h1 {
       font-size: 20px;
       font-weight: 600;

@@ -78,16 +78,22 @@
       </template>
     </HomeLabel>
   </section>
-  <div class="mt-12">
+  <section class="mt-12">
     <h1 class="styled h1">
       <span>#SUBWAYINDONESIA</span>
       PROMO
     </h1>
     <HomeCarouselPromo />
-  </div>
+  </section>
+  <section class="flex flex-col gap-8">
+    <h1 class="text-center text-4xl font-semibold text-green-600">
+      Subway FAQ
+    </h1>
+    <HomeFaqAccordion />
+  </section>
 </template>
 
-<script>
+<script setup>
 const styled = "px-24";
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="card bg-zinc-50">
     <NuxtLink :to="`/our_menu/${products.id} `">
-      <div class="h-[200px] w-full overflow-hidden rounded-md">
+      <div class="h-[200px] w-full overflow-hidden rounded-md bg-amber-100">
         <img :src="products.image" alt="" class="h-full w-full object-cover" />
       </div>
       <div class="body mt-2 flex flex-col">
