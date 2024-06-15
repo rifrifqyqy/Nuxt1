@@ -24,7 +24,7 @@
     "image": "/images/mineralwater.png"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Breadballs Marinara",
     "description": "Terjunlah ke kenikmatan yang tak terbantahkan dengan Ultimate Cheese Steak kami. Daging sapi panggang yang lembut dan juicy disajikan dengan potongan bawang dan paprika yang digoreng sempurna, semuanya dilumuri oleh lapisan tebal keju cheddar dan mozzarella yang melumer. Setiap gigitan adalah perpaduan sempurna dari rasa gurih dan lembut, membuat setiap orang kembali meminta lebih.",
     "category": "sandwich",
@@ -41,27 +41,27 @@
   },
   {
     "id": 6,
-    "title": "Meatball Marinara",
-    "description": "Italian style meatballs covered in marinara sauce.",
-    "category": "sides",
+    "title": "Steak & Cheese",
+    "description": "Inspired by the hoagie that made Philadelphia famous, our version of the Cheese Steak features mouth-watering slices of lean and tender steak with sautéed onions and green peppers topped with melted cheese. Its served hot with your choice of fresh vegetables and condiments on freshly baked bread.",
+    "category": "sandwich",
     "price": 7.49,
-    "image": "https://img.freepik.com/free-photo/boiled-eggs-stir-fried-with-tamarind-sauce_1150-22266.jpg?t=st=1717925220~exp=1717928820~hmac=86b3677a61008158584e7b40b2cb8faa597eef17a4f92d7ec5ee24f8403b49cf&w=996"
+    "image": "https://www.subway.com.my/images/menu/steakandcheese.webp"
   },
   {
     "id": 7,
-    "title": "Roast Beef",
-    "description": "Slices of lean and tender roast beef.",
-    "category": "sides",
+    "title": "Chicken Slice",
+    "description": "With succulent slices of Chicken ham, you can't beat this favorite. Especially as it's got under 6 grams of fat.",
+    "category": "sandwich",
     "price": 7.99,
-    "image": "https://img.freepik.com/free-photo/fried-pork-with-fried-chili-fried-onion-mint-white-plate_1150-25872.jpg?t=st=1717925313~exp=1717928913~hmac=d163bdc0e7e513e440502f31c5faa1000b28b88d5ccaaa6b0e8deebec72f93b2&w=996"
+    "image": "https://www.subway.com.my/images/menu/chicken-slice.webp"
   },
   {
     "id": 8,
-    "title": "Turkey Breast",
-    "description": "Sliced turkey breast, lean and delicious.",
-    "category": "sides",
+    "title": "Spicy Italian",
+    "description": "Spice up your life with some real flavor. Served on freshly baked bread and toasted to perfection, the Spicy Italian sandwich features spicy pepperoni and delicious slices of salami. For a more personalized taste, add fresh peppers, oil, vinegar or anything else to suit your liking.",
+    "category": "sandwich",
     "price": 6.99,
-    "image": "https://img.freepik.com/free-photo/grilled-chicken-breast-potato-tomato-greens-bbq-sauce-side-view_141793-4446.jpg?t=st=1717925335~exp=1717928935~hmac=452ba69d015fca8423136d87eb395799afbb409ac8534d5d81322c010f7d0288&w=740"
+    "image": "https://www.subway.com.my/images/menu/SpicyItalianv2.webp"
   },
   {
     "id": 9,
@@ -246,5 +246,77 @@
     "description": "Italian-style meatballs with marinara sauce and melted cheese.",
     "price": 7.49,
     "image": "https://www.subway.co.id/wp-content/uploads/2024/04/Mac-Cheese.jpg"
+  },
+  {
+    "id": 33,
+    "title": "Veggie Delight Sandwich",
+    "category": "sandwich",
+    "description": "A delightfully crunchy fresh combination of garden fresh lettuce, tomatoes, green peppers, onions, olives and pickles and your choice of condiments served on freshly baked bread. It’s like a salad sandwich.",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/Veggie-Delight.webp"
+  },
+  {
+    "id": 34,
+    "title": "Roast Beef",
+    "category": "sandwich",
+    "description": "A classic favorite, comprises of lean and tender sliced roast beef with your choice of fresh vegetables and condiments served on freshly baked bread.",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/Roast-Beef.webp"
+  },
+  {
+    "id": 35,
+    "title": "Italian B.M.T.",
+    "category": "sandwich",
+    "description": "An old world favourite sandwich that is made up of beef salami, beef pepperoni and chicken ham. Some say B.M.T.™ stands for biggest, meatiest, tastiest.",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/italian-bmt.webp"
+  },
+  {
+    "id": 36,
+    "title": "BBQ Chicken Strips",
+    "category": "sandwich",
+    "description": "The New BBQ Chicken Sandwich consist of tender chicken strips paired with sweet and tangy St.louis style BBQ sauce, fresh lettuce,tomatoes, red onions and pickles on your choice of toasted bread.",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/BBQ-ChickenL.webp"
+  },
+  {
+    "id": 37,
+    "title": "Chicken Teriyaki",
+    "category": "sandwich",
+    "description": "An Asian classic, is made with tender chicken pieces dressed lightly with teriyaki sauce, served hot and topped with your choice of fresh vegetables and condiments on freshly baked bread.",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/teriyaki-chicken.webp"
+  },
+  {
+    "id": 38,
+    "title": "Bulgogi Chicken",
+    "category": "sandwich",
+    "description": "Switch out your usual cheese with Mozzarella to get that K-fry stretch! Korean flavours of Bulgogi, enveloped in stretchy Mozzarella - a sub combination out of this world.",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/Bulgogi-Chicken-Sub.webp"
+  },
+  {
+    "id": 39,
+    "title": "Roasted Chicken",
+    "category": "sandwich",
+    "description": "Feel peckish for chicken? Then try our Oven Roasted Chicken Breast. A tender, boneless chicken breast patty roasted to perfection, with your choice of fresh vegetables and condiments is served on freshly baked bread. Just like mom used to make.",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/roasted-chicken.webp"
+  },
+  {
+    "id": 39,
+    "title": "Seafood Sensation",
+    "category": "sandwich",
+    "description": "Sweet, tender chunks of seafood blended with creamy light mayonnaise to make a delightfully delicious sub, served with your choice of vegetables & condiments on freshly baked bread",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/Seafood-Sensation.webp"
+  },
+  {
+    "id": 40,
+    "title": "Egg Mayo",
+    "category": "sandwich",
+    "description": "A simple recipe anyone will love with a thick spread of chopped up boiled egg mixed with creamy rich mayonnaise.",
+    "price": 7.49,
+    "image": "https://www.subway.com.my/images/menu/Egg-mayo.webp"
   }
 ]

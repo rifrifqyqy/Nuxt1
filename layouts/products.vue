@@ -82,7 +82,7 @@
       <div class="col-span-5 mt-4 flex justify-center bg-green-700 py-2">
         <h1 class="text-md w-fit text-white">
           © 2024 Subway IP LLC by PT Sari Sandwich Indonesia | All rights
-          reserved. Designed by Rifqy Hamdani
+          reserved. Designed by Rifqy Hamdani | Made with Nuxt3
         </h1>
       </div>
     </footer>
