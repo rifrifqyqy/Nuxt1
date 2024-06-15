@@ -66,7 +66,7 @@
               type="email"
               name=""
               id=""
-              placeholder="youremail@email.com"
+              placeholder="enter your email address"
               class="px-4 py-3 text-green-600"
             />
             <buttonPrimary

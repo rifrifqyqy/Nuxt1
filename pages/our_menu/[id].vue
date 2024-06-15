@@ -69,6 +69,9 @@
           >Order Now</buttonPrimary
         >
       </div>
+      <div class="mx-24 w-[500px] mt-4">
+        <AccordionMenu/>
+      </div>
     </main>
   </section>
   <section class="mt-8">
