@@ -42,28 +42,30 @@
       :class="[
         'nav-mobile',
         { show: isNavVisible },
-        'fixed top-[48px] z-50 hidden h-fit w-full -translate-y-[100dvh] bg-white transition-all duration-300 max-sm:block',
+        'fixed top-[48px] z-50 hidden h-[40%] w-full -translate-y-[120dvh] bg-white transition-all duration-300 max-sm:block',
       ]"
     >
-      <ul class="">
-        <li>
-          <NuxtLink to="/" :class="styledMenuNav">Home</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/our_menu" :class="styledMenuNav">Menu</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/promo" :class="styledMenuNav">Promo</NuxtLink>
-        </li>
-        <li>
-          <NuxtLink to="/about" :class="[styledMenuNav]">About</NuxtLink>
-        </li>
-      </ul>
-      <buttonPrimary
-        styled="rounded-md mt-4 bg-green-700 max-md:py-2 max-md:text-[16px] px-5 text-yellow-400 ring-inset ring-green-400 hover:opacity-80 active:ring-2 w-full h-fit "
-      >
-        Order Now
-      </buttonPrimary>
+      <div class="flex h-full w-full flex-col justify-between">
+        <ul class="bg-white">
+          <li>
+            <NuxtLink to="/" :class="styledMenuNav">Home</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/our_menu" :class="styledMenuNav">Menu</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/promo" :class="styledMenuNav">Promo</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/about" :class="[styledMenuNav]">About</NuxtLink>
+          </li>
+        </ul>
+        <buttonPrimary
+          styled="rounded-md mt-4 bg-green-700 max-md:py-2 max-md:text-[16px] px-5 text-yellow-400 ring-inset ring-green-400 hover:opacity-80 active:ring-2 w-full h-fit "
+        >
+          Order Now
+        </buttonPrimary>
+      </div>
     </nav>
     <section class="mx-12 my-4 max-sm:hidden">
       <UBreadcrumb divider="/" :links="links" />

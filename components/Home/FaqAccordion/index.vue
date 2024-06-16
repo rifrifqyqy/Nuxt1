@@ -3,12 +3,12 @@
     <template #default="{ item, index, open }">
       <UButton
         variant="ghost"
-        class="group border-2 border-yellow-500 transition-all duration-300 hover:bg-yellow-500"
+        class="group border-2 border-yellow-500 transition-all duration-300 hover:bg-yellow-500 max-sm:border"
         :ui="{ rounded: 'rounded-none', padding: {} }"
         :class="[open && 'bg-yellow-500']"
       >
         <span
-          class="truncate px-4 py-2 text-xl max-sm:px-2 text-green-700 group-hover:text-green-600 max-sm:text-[16px] max-sm:py-0"
+          class="truncate px-4 py-2 text-xl text-green-700 group-hover:text-green-600 max-sm:px-2 max-sm:py-0 max-sm:text-[16px]"
         >
           {{ item.label }}</span
         >
@@ -23,7 +23,9 @@
       </UButton>
     </template>
     <template #item="{ item }">
-      <p class="px-4 text-lg text-gray-900 dark:text-white max-sm:text-[14px] max-sm:leading-normal">
+      <p
+        class="px-4 text-lg text-gray-900 max-sm:text-[14px] max-sm:leading-normal dark:text-white"
+      >
         {{ item.content }}
       </p>
     </template>

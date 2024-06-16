@@ -6,9 +6,9 @@
       >
         <img :src="products.image" alt="" class="h-full w-full object-cover" />
       </div>
-      <div class="body mt-2 flex flex-col">
+      <div class="body mt-2 flex flex-col max-sm:mt-1">
         <h1 class="title">{{ products.title }}</h1>
-        <p class="line-clamp-2 max-sm:text-[14px]">
+        <p class="line-clamp-2 text-zinc-400 max-sm:text-[12px]">
           {{ products.description }}
         </p>
         <h2 class="price">{{ formatPrice(products.price) }}</h2>
@@ -38,7 +38,7 @@ const formatPrice = (price) => {
   @apply flex h-full max-h-fit w-[260px] flex-col justify-between rounded-lg p-2 shadow-md max-sm:w-[160px] max-sm:rounded-sm max-sm:p-1;
 
   .title {
-    @apply text-xl font-semibold text-green-600 max-sm:text-[16px];
+    @apply text-xl font-semibold text-green-600 max-sm:text-[16px] leading-normal;
   }
   .price {
     @apply text-xl font-bold text-yellow-500 max-sm:text-[16px];

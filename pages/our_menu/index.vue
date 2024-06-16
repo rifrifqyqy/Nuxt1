@@ -225,7 +225,7 @@ const handleBeforeUnload = () => {
 }
 .sidebar-mobile {
   scrollbar-width: none;
-  @apply sticky top-[66px] -mx-4 mb-4 hidden items-center gap-4 overflow-x-scroll bg-[#FFFDF0] px-4 py-2 font-semibold text-green-700 shadow-sm max-sm:flex;
+  @apply sticky top-[60px] -mx-4 mb-4 hidden items-center gap-4 overflow-x-scroll bg-[#FFFDF0] px-4 py-2 font-semibold text-green-700 shadow-sm max-sm:flex;
 }
 .menu-nav {
   @apply cursor-pointer rounded-sm bg-zinc-100 px-4 py-1 font-medium text-zinc-600/60 transition-all hover:bg-green-600 hover:text-yellow-300;
