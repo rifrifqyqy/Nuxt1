@@ -35,7 +35,7 @@
         Order Now
       </buttonPrimary>
       <button class="hidden max-sm:block" @click="toggleNav">
-        <Hamburger width="42" height="42" fill="fill-green-600" />
+        <Hamburger  fill="fill-green-600" />
       </button>
     </nav>
     <nav

@@ -12,7 +12,7 @@
       >
         <span
           :class="[
-            'truncate px-4 py-2 text-lg text-yellow-500 group-hover:text-zinc-50 max-sm:px-0 max-sm:py-0 max-sm:text-[14px]',
+            'truncate px-4 py-2 text-lg text-yellow-500 group-hover:text-zinc-50 max-sm:px-0 max-sm:py-0 max-sm:text-[16px]',
             open && 'text-zinc-50',
           ]"
         >

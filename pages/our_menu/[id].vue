@@ -24,7 +24,7 @@
               {{ product.title }}
             </h1>
 
-            <h3 class="h-full text-2xl font-semibold text-yellow-500">
+            <h3 class="h-full text-2xl max-sm:text-[20px] font-semibold text-yellow-500">
               {{ formattedPrice }}
             </h3>
           </div>

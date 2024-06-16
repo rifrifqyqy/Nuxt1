@@ -26,7 +26,7 @@
               class="duration-600 absolute z-[2] h-full w-full bg-black/40 transition-all group-hover:bg-black/0"
             />
             <h1
-              class="inset-0 z-10 m-auto text-2xl font-bold text-amber-300 transition-all group-hover:scale-110 max-sm:text-lg"
+              class="inset-0 z-10 m-auto text-2xl font-bold text-amber-300 transition-all group-hover:scale-110 max-sm:text-[16px]"
             >
               OUR MENU
             </h1>
@@ -40,7 +40,7 @@
               class="duration-600 absolute z-[2] h-full w-full bg-black/40 transition-all group-hover:bg-black/0"
             />
             <h1
-              class="inset-0 z-10 m-auto text-2xl font-bold text-amber-300 transition-all group-hover:scale-110 max-sm:text-lg"
+              class="inset-0 z-10 m-auto text-2xl font-bold text-amber-300 transition-all group-hover:scale-110 max-sm:text-[16px]"
             >
               SUBWAY PROMO
             </h1>
@@ -102,7 +102,7 @@ nav {
   }
 }
 .style {
-  @apply w-max border-b-[3px] border-transparent px-12 py-6 hover:border-green-600 max-md:px-4 max-md:text-[14px];
+  @apply w-max border-b-[3px] border-transparent px-12 py-6 hover:border-green-600 max-md:px-4 max-md:text-[12px];
 }
 .styled.h1 {
   @apply text-center text-3xl font-bold text-green-600 max-sm:text-xl;
