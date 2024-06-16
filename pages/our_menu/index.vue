@@ -228,7 +228,7 @@ const handleBeforeUnload = () => {
   @apply sticky top-[58px] -mx-4 mb-4 hidden items-center gap-4 overflow-x-scroll bg-[#f7f7f7] px-4 py-2 font-semibold text-green-700 shadow-sm max-sm:flex;
 }
 .menu-nav {
-  @apply cursor-pointer rounded-sm bg-zinc-100 px-4 py-1 font-medium text-zinc-600/60 transition-all hover:bg-green-600 hover:text-yellow-300;
+  @apply cursor-pointer rounded-sm bg-zinc-200 px-4 py-1 font-medium text-zinc-600/60 transition-all hover:bg-green-600 hover:text-yellow-300;
 }
 .menu-nav.active {
   @apply bg-green-600 text-yellow-300;

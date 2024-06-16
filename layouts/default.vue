@@ -45,7 +45,7 @@
         'fixed top-[48px] z-50 hidden h-fit w-full -translate-y-[100dvh] bg-white transition-all duration-300 max-sm:block',
       ]"
     >
-      <ul class="">
+      <ul class="text-green-600">
         <li>
           <NuxtLink to="/" :class="styledMenuNav">Home</NuxtLink>
         </li>

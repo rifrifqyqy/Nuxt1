@@ -46,7 +46,7 @@
       ]"
     >
       <div class="flex h-full w-full flex-col justify-between">
-        <ul class="bg-white">
+        <ul class="bg-white text-green-600">
           <li>
             <NuxtLink to="/" :class="styledMenuNav">Home</NuxtLink>
           </li>
