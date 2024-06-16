@@ -117,12 +117,12 @@ export default {
 
 <style>
 .swiper {
-  @apply h-full overflow-hidden px-12 max-sm:w-[400px] md:w-[600px] lg:w-[800px] xl:w-[1200px];
+  @apply h-full overflow-hidden px-12 max-sm:w-[300px] md:w-[600px] lg:w-[800px] xl:w-[1200px];
 }
 
 .swiper-slide {
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-  @apply h-fit w-[350px] overflow-hidden;
+  @apply h-fit w-[350px] overflow-hidden max-sm:w-[280px];
 }
 
 .swiper-slide .photoimg {
@@ -139,15 +139,15 @@ export default {
   }
 }
 .photoframe {
-  @apply bg-white px-4 py-4;
+  @apply bg-white p-4 max-sm:p-2;
 
   .profile {
-    @apply mt-4 flex items-center gap-2;
+    @apply mt-4 flex items-center gap-2 max-sm:mt-2;
     h1 {
-      @apply text-lg font-semibold text-zinc-800;
+      @apply text-lg font-semibold text-zinc-800 max-sm:text-[16px] max-sm:leading-tight;
     }
     p {
-      @apply text-sm text-amber-500 italic;
+      @apply text-sm italic text-amber-500;
     }
   }
 }

@@ -12,7 +12,7 @@
       >
         <span
           :class="[
-            'truncate px-4 py-2 text-lg text-yellow-500 group-hover:text-zinc-50',
+            'truncate px-4 py-2 text-lg text-yellow-500 group-hover:text-zinc-50 max-sm:px-0 max-sm:py-0 max-sm:text-[14px]',
             open && 'text-zinc-50',
           ]"
         >
@@ -29,7 +29,9 @@
       </UButton>
     </template>
     <template #item="{ item }">
-      <p class="px-4 text-lg text-gray-900 dark:text-white">
+      <p
+        class="px-4 text-lg leading-normal text-gray-900 max-sm:text-[14px] dark:text-white"
+      >
         {{ item.content }}
       </p>
     </template>
