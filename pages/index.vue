@@ -1,9 +1,9 @@
 <template>
-  <main class="mt-4 grid grid-cols-2 gap-4 max-md:grid-cols-1">
+  <main class="mt-4 grid grid-cols-2 gap-4 max-md:grid-cols-1 max-sm:gap-2">
     <!-- carousel -->
     <HomeCarousel />
     <!-- carousel end -->
-    <article class="grid gap-4">
+    <article class="grid gap-4 max-sm:gap-2">
       <div
         class="row-span-2 flex h-full w-full flex-col justify-between rounded-xl bg-neutral-800 px-4 py-2"
       >
@@ -17,7 +17,7 @@
         </p>
       </div>
 
-      <section class="row-span-1 grid grid-cols-2 gap-4">
+      <section class="row-span-1 grid grid-cols-2 gap-4 max-sm:gap-2">
         <NuxtLink to="/our_menu">
           <div
             class="group relative flex h-full border-spacing-y-6 cursor-pointer overflow-hidden rounded-xl bg-hotdog1 bg-cover bg-center"

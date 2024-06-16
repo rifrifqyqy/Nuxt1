@@ -199,7 +199,7 @@ const handleBeforeUnload = () => {
 
 <style scoped>
 .prods-container {
-  @apply grid h-fit grid-cols-4 gap-4 max-sm:grid-cols-2;
+  @apply grid h-fit grid-cols-4 gap-4 max-sm:gap-2 max-sm:grid-cols-2;
 }
 .sidebar-category {
   @apply sticky top-[100px] flex h-max w-[280px] flex-col gap-2 rounded-lg border border-green-600 p-2 max-sm:hidden;
@@ -225,7 +225,7 @@ const handleBeforeUnload = () => {
 }
 .sidebar-mobile {
   scrollbar-width: none;
-  @apply sticky top-[60px] -mx-4 mb-4 hidden items-center gap-4 overflow-x-scroll bg-[#FFFDF0] px-4 py-2 font-semibold text-green-700 shadow-sm max-sm:flex;
+  @apply sticky top-[58px] -mx-4 mb-4 hidden items-center gap-4 overflow-x-scroll bg-[#f7f7f7] px-4 py-2 font-semibold text-green-700 shadow-sm max-sm:flex;
 }
 .menu-nav {
   @apply cursor-pointer rounded-sm bg-zinc-100 px-4 py-1 font-medium text-zinc-600/60 transition-all hover:bg-green-600 hover:text-yellow-300;

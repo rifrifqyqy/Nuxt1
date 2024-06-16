@@ -3,7 +3,7 @@
     <template #default="{ item, index, open }">
       <UButton
         variant="ghost"
-        class="group border-2 border-yellow-500 transition-all duration-300 hover:bg-yellow-500 max-sm:border"
+        class="group flex justify-between border-2 border-yellow-500 transition-all duration-300 hover:bg-yellow-500 max-sm:border"
         :ui="{ rounded: 'rounded-none', padding: {} }"
         :class="[open && 'bg-yellow-500']"
       >
@@ -16,7 +16,7 @@
         <template #trailing>
           <UIcon
             name="i-heroicons-chevron-down-20-solid"
-            class="ms-auto h-5 w-5 transform text-green-600 transition-transform duration-200"
+            class="h-5 w-5 transform text-green-600 transition-transform duration-200 min-w-6"
             :class="[open && 'rotate-180']"
           />
         </template>

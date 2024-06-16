@@ -6,7 +6,7 @@
       >
         <img :src="products.image" alt="" class="h-full w-full object-cover" />
       </div>
-      <div class="body mt-2 flex flex-col max-sm:mt-1">
+      <div class="body mt-2 flex flex-col max-sm:mt-1 max-sm:px-1">
         <h1 class="title">{{ products.title }}</h1>
         <p class="line-clamp-2 text-zinc-400 max-sm:text-[12px]">
           {{ products.description }}
@@ -35,7 +35,7 @@ const formatPrice = (price) => {
 
 <style scoped>
 .card {
-  @apply flex h-full max-h-fit w-[260px] flex-col justify-between rounded-lg p-2 shadow-md max-sm:w-[160px] max-sm:rounded-sm max-sm:p-1;
+  @apply flex h-full max-h-fit w-[260px] flex-col justify-between rounded-lg p-2 shadow-md max-sm:w-full max-sm:rounded-md max-sm:p-1;
 
   .title {
     @apply text-xl font-semibold text-green-600 max-sm:text-[16px] leading-normal;

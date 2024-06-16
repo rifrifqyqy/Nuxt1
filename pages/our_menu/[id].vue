@@ -24,7 +24,9 @@
               {{ product.title }}
             </h1>
 
-            <h3 class="h-full text-2xl max-sm:text-[20px] font-semibold text-yellow-500">
+            <h3
+              class="h-full text-2xl font-semibold text-yellow-500 max-sm:text-[20px]"
+            >
               {{ formattedPrice }}
             </h3>
           </div>
@@ -42,7 +44,7 @@
 
         <Accordion
           id="accordion1"
-          buttonClass="bg-transparent text-green-600 border-2 max-sm:py-1 border-zinc-500 rounded-md text-lg max-sm:text-[16px] text-zinc-600"
+          buttonClass="bg-transparent text-green-600 border-2 max-sm:py-1 border-zinc-500 max-sm:border rounded-md text-lg max-sm:text-[16px] text-zinc-600"
           contentStyled="grid p-2"
         >
           <template #header> See Ingredients </template>
