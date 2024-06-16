@@ -65,13 +65,13 @@
         Available
       </template>
     </HomeLabel>
-    <HomeLabel imgSrc="/images/onlinefood.png" styled="style">
+    <HomeLabel imgSrc="/images/disc.png" styled="style">
       <template #text>
         Promotion of <br />
         The Week
       </template>
     </HomeLabel>
-    <HomeLabel imgSrc="/images/onlinefood.png" styled="style">
+    <HomeLabel imgSrc="/images/bigsandwich.png" styled="style">
       <template #text>
         Extra Size <br />
         Extra YUMMYY
