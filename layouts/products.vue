@@ -1,17 +1,19 @@
 <template>
   <div>
     <nav
-      class="navbar sticky top-0 z-[999] mt-2 flex items-center justify-between px-24 py-3 transition-all duration-300"
+      class="navbar sticky top-0 z-[999] mt-2 flex items-center justify-between px-24 py-3 transition-all duration-300 max-md:px-8"
     >
       <div class="flex items-center justify-between gap-12">
         <NuxtLink to="/">
           <img
             src="/images/logo.png"
             alt=""
-            class="w-[180px] scale-75 transition-all hover:scale-110"
+            class="logo w-[180px] transition-all max-md:w-[120px]"
           />
         </NuxtLink>
-        <ul class="flex gap-8 text-[20px] font-semibold text-green-700">
+        <ul
+          class="flex gap-8 text-[20px] font-semibold text-green-700 max-md:gap-2 max-sm:hidden"
+        >
           <li>
             <NuxtLink to="/" :class="styledMenuNav">Home</NuxtLink>
           </li>
@@ -27,10 +29,41 @@
         </ul>
       </div>
 
-      <UButton
-        class="rounded-lg bg-green-700 px-5 text-[20px] text-yellow-300 ring-inset ring-green-400 hover:bg-green-700/80 active:ring-2"
-        >Order Now</UButton
+      <buttonPrimary
+        styled="rounded-lg bg-green-700 px-5 text-[20px] text-yellow-300 ring-inset ring-green-400 hover:opacity-80 active:ring-2 max-sm:hidden"
       >
+        Order Now
+      </buttonPrimary>
+      <button class="hidden max-sm:block" @click="toggleNav">
+        <Hamburger width="42" height="42" fill="fill-green-600" />
+      </button>
+    </nav>
+    <nav
+      :class="[
+        'nav-mobile',
+        { show: isNavVisible },
+        'fixed top-[48px] z-50 hidden h-fit w-full -translate-y-[100dvh] bg-white transition-all duration-300 max-sm:block',
+      ]"
+    >
+      <ul class="">
+        <li>
+          <NuxtLink to="/" :class="styledMenuNav">Home</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/our_menu" :class="styledMenuNav">Menu</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/promo" :class="styledMenuNav">Promo</NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/about" :class="[styledMenuNav]">About</NuxtLink>
+        </li>
+      </ul>
+      <buttonPrimary
+        styled="rounded-md mt-4 bg-green-700 max-md:py-2 max-md:text-[16px] px-5 text-yellow-400 ring-inset ring-green-400 hover:opacity-80 active:ring-2 w-full h-fit"
+      >
+        Order Now
+      </buttonPrimary>
     </nav>
     <section class="mx-12 my-4">
       <UBreadcrumb divider="/" :links="links" />

@@ -1,5 +1,5 @@
 <template>
-  <section class="relative mt-12">
+  <section class="relative mt-12 max-sm:mt-8">
     <Swiper
       :effect="'coverflow'"
       :grabCursor="true"

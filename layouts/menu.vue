@@ -60,19 +60,27 @@
         </li>
       </ul>
       <buttonPrimary
-        styled="rounded-md mt-4 bg-green-700 max-md:py-2 max-md:text-[16px] px-5 text-yellow-400 ring-inset ring-green-400 hover:opacity-80 active:ring-2 w-full h-fit"
+        styled="rounded-md mt-4 bg-green-700 max-md:py-2 max-md:text-[16px] px-5 text-yellow-400 ring-inset ring-green-400 hover:opacity-80 active:ring-2 w-full h-fit "
       >
         Order Now
       </buttonPrimary>
     </nav>
-
-    <div class="mx-24 max-md:mx-4">
+    <section class="mx-12 my-4 max-sm:hidden">
+      <UBreadcrumb divider="/" :links="links" />
+    </section>
+    <div>
       <slot />
     </div>
 
     <footer class="mt-16 bg-green-800">
-      <section class="grid grid-cols-5 max-sm:grid-cols-2 px-24 py-12 max-sm:px-8 max-sm:py-4 text-white">
-        <img src="/images/subway.png" alt="" class="col-span-2 w-[200px] max-sm:w-[150px] max-sm:mb-6" />
+      <section
+        class="grid grid-cols-5 px-24 py-12 text-white max-sm:grid-cols-2 max-sm:px-8 max-sm:py-4"
+      >
+        <img
+          src="/images/subway.png"
+          alt=""
+          class="col-span-2 w-[200px] max-sm:mb-6 max-sm:w-[150px]"
+        />
         <div class="menu-list">
           <h1>Navigation</h1>
           <ul class="mt-2 flex flex-col gap-2">
@@ -108,8 +116,10 @@
         </div>
       </section>
 
-      <div class="col-span-5 mt-4 flex justify-center bg-green-700 py-2 max-sm:px-4 ">
-        <h1 class="text-md w-fit text-white max-sm:text-sm text-center">
+      <div
+        class="col-span-5 mt-4 flex justify-center bg-green-700 py-2 max-sm:px-4"
+      >
+        <h1 class="text-md w-fit text-center text-white max-sm:text-sm">
           © 2024 Subway IP LLC by PT Sari Sandwich Indonesia | All rights
           reserved. Designed by Rifqy Hamdani |
           <span class="ml-2">Made with</span>
@@ -129,6 +139,23 @@
 import Hamburger from "~/components/Icons/Hamburger.vue";
 import Close from "~/components/Icons/Close.vue";
 import { ref } from "vue";
+const transition = "transition-all duration-300";
+const links = [
+  {
+    label: "Lobby Restaurant",
+    icon: "i-heroicons-home",
+    to: "/",
+    labelClass: `group hover:text-green-500 peer-hover:text-green-500 ${transition}`,
+    iconClass: `iconBreadCrumb peer group-hover:bg-green-500 ${transition}`,
+  },
+
+  {
+    label: "Food Category",
+    icon: "i-heroicons-document-duplicate",
+    iconClass: "iconBreadCrumb",
+  },
+];
+
 const styledMenuNav =
   "hover:text-amber-400 transition-all duration-300 hover:border-b-2 border-amber-400 max-md:text-[16px]";
 
@@ -173,10 +200,10 @@ const toggleNav = () => {
 footer {
   section .menu-list {
     h1 {
-      @apply text-[20px] font-semibold max-sm:text-[16px]
+      @apply text-[20px] font-semibold max-sm:text-[16px];
     }
     li {
-      @apply max-sm:text-[14px]
+      @apply max-sm:text-[14px];
     }
   }
 }

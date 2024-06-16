@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-12 flex justify-between">
+  <div class="mx-12 flex justify-between max-sm:mx-4 max-sm:flex-col">
     <aside class="sidebar-category">
       <h1
         class="mb-4 rounded-md bg-green-600 py-2 text-center text-3xl font-semibold text-white"
@@ -95,6 +95,52 @@
         </h1>
       </div>
     </aside>
+    <aside
+      class="sidebar-mobile sticky top-[66px] -mx-4 hidden items-center gap-4 overflow-x-scroll bg-[#FFFDF0] px-4 py-2 font-semibold text-green-600 shadow-sm max-sm:flex mb-4"
+    >
+      <div
+        class="menu-nav"
+        :class="{ active: selectedCategory === 'breakfast' }"
+        @click="setSelectedCategory('breakfast')"
+      >
+        Breakfast
+      </div>
+      <div
+        class="menu-nav"
+        :class="{ active: selectedCategory === 'wrap' }"
+        @click="setSelectedCategory('wrap')"
+      >
+        Wraps
+      </div>
+      <div
+        class="menu-nav"
+        :class="{ active: selectedCategory === 'sandwich' }"
+        @click="setSelectedCategory('sandwich')"
+      >
+        Sandwich
+      </div>
+      <div
+        class="menu-nav"
+        :class="{ active: selectedCategory === 'salad' }"
+        @click="setSelectedCategory('salad')"
+      >
+        Salads
+      </div>
+      <div
+        class="menu-nav"
+        :class="{ active: selectedCategory === 'drink' }"
+        @click="setSelectedCategory('drink')"
+      >
+        Drinks
+      </div>
+      <div
+        class="menu-nav"
+        :class="{ active: selectedCategory === 'sides' }"
+        @click="setSelectedCategory('sides')"
+      >
+        Sides
+      </div>
+    </aside>
     <div class="prods-container">
       <div v-for="p in filteredProducts" :key="p.id">
         <CardProducts :products="p" />
@@ -105,7 +151,7 @@
 
 <script setup>
 definePageMeta({
-  layout: "products",
+  layout: "menu",
 });
 useHead({
   title: "Subway | Menu",
@@ -155,10 +201,10 @@ const handleBeforeUnload = () => {
 
 <style scoped>
 .prods-container {
-  @apply grid h-fit grid-cols-4 gap-4;
+  @apply grid h-fit grid-cols-4 gap-4 max-sm:grid-cols-2;
 }
 .sidebar-category {
-  @apply sticky top-[100px] flex h-max w-[280px] flex-col gap-2 rounded-lg border border-green-600 p-2;
+  @apply sticky top-[100px] flex h-max w-[280px] flex-col gap-2 rounded-lg border border-green-600 p-2 max-sm:hidden;
 }
 
 .ctg-box {
@@ -178,5 +224,11 @@ const handleBeforeUnload = () => {
   img {
     @apply brightness-75 grayscale-0;
   }
+}
+.menu-nav {
+  @apply cursor-pointer rounded-sm bg-emerald-100 px-4 py-1 font-semibold text-green-600/60 transition-all hover:bg-green-600 hover:text-yellow-300;
+}
+.menu-nav.active {
+  @apply bg-green-600 text-yellow-300;
 }
 </style>

@@ -8,9 +8,9 @@
         class="row-span-2 flex h-full w-full flex-col justify-between rounded-xl bg-neutral-800 px-4 py-2"
       >
         <h1 class="logo w-[60%]">
-          <img src="/images/subway.png" alt="" />
+          <img src="/images/subway.png" alt="" class="max-sm:w-[200px]" />
         </h1>
-        <p class="text-white">
+        <p class="text-white max-sm:text-[14px]">
           Spoil your taste buds with a selection of sandwiches, salads, and
           other healthy dishes from Subway. Every bite is filled with unbeatable
           flavors and fresh ingredients made to order..
@@ -26,7 +26,7 @@
               class="duration-600 absolute z-[2] h-full w-full bg-black/40 transition-all group-hover:bg-black/0"
             />
             <h1
-              class="inset-0 z-10 m-auto text-2xl font-bold text-amber-300 transition-all group-hover:scale-110"
+              class="inset-0 z-10 m-auto text-2xl font-bold text-amber-300 transition-all group-hover:scale-110 max-sm:text-lg"
             >
               OUR MENU
             </h1>
@@ -34,13 +34,13 @@
         </NuxtLink>
         <NuxtLink to="/promo">
           <div
-            class="group relative flex h-full border-spacing-y-6 cursor-pointer overflow-hidden rounded-xl bg-resto1 bg-cover bg-center"
+            class="group relative flex h-full border-spacing-y-6 cursor-pointer overflow-hidden rounded-xl bg-resto1 bg-cover bg-center max-sm:h-[70px]"
           >
             <div
               class="duration-600 absolute z-[2] h-full w-full bg-black/40 transition-all group-hover:bg-black/0"
             />
             <h1
-              class="inset-0 z-10 m-auto text-2xl font-bold text-amber-300 transition-all group-hover:scale-110"
+              class="inset-0 z-10 m-auto text-2xl font-bold text-amber-300 transition-all group-hover:scale-110 max-sm:text-lg"
             >
               SUBWAY PROMO
             </h1>
@@ -51,7 +51,7 @@
   </main>
 
   <section
-    class="mx-auto mt-12 flex w-fit flex-wrap overflow-hidden rounded-lg border border-yellow-500 bg-white"
+    class="mx-auto mt-12 grid grid-cols-4 overflow-hidden rounded-lg border border-yellow-500 bg-white max-sm:grid-cols-2"
   >
     <HomeLabel imgSrc="/images/vege.png" styled="style">
       <template #text>
@@ -86,9 +86,7 @@
     <HomeCarouselPromo />
   </section>
   <section class="flex flex-col gap-8">
-    <h1 class="text-center text-4xl font-semibold text-green-600">
-      Subway FAQ
-    </h1>
+    <h1 class="styled h1">Subway FAQ</h1>
     <HomeFaqAccordion />
   </section>
 </template>
@@ -107,7 +105,7 @@ nav {
   @apply w-max border-b-[3px] border-transparent px-12 py-6 hover:border-green-600 max-md:px-4 max-md:text-[14px];
 }
 .styled.h1 {
-  @apply text-center text-3xl font-bold text-green-600;
+  @apply text-center text-3xl font-bold text-green-600 max-sm:text-xl;
 
   span {
     @apply italic;

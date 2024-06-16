@@ -1,6 +1,6 @@
 <template>
   <div :class="styledBox">
-    <img :src="imgSrc" alt="" class="w-[64px]" />
+    <img :src="imgSrc" alt="" class="w-[64px] max-sm:w-[42px]" />
     <h1 :class="textStyled">
       <slot name="text" />
     </h1>

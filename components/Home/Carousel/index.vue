@@ -7,13 +7,13 @@
       :prev-button="{
         color: 'gray',
         icon: 'i-heroicons-arrow-left-20-solid',
-        class: 'mt-[30%] max-md:mt-[110%] text-green-500',
+        class: 'mt-[30%] max-md:mt-[20%] text-green-500',
       }"
       :next-button="{
         color: 'gray',
         icon: 'i-heroicons-arrow-right-20-solid',
         class:
-          'mt-[30%] max-md:mt-[110%] left-0 w-fit ml-[64px] text-green-500',
+          'mt-[30%] max-md:mt-[20%] left-0 w-fit ml-[64px] text-green-500',
       }"
       :ui="{
         item: 'basis-full',
@@ -23,7 +23,7 @@
     >
       <img
         :src="item"
-        class="h-[450px] w-full object-cover brightness-75"
+        class="h-[450px] max-sm:h-[220px] w-full object-cover brightness-75"
         draggable="false"
       />
     </UCarousel>

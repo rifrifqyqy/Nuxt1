@@ -318,5 +318,85 @@
     "description": "A simple recipe anyone will love with a thick spread of chopped up boiled egg mixed with creamy rich mayonnaise.",
     "price": 7.49,
     "image": "https://www.subway.com.my/images/menu/Egg-mayo.webp"
+  },
+  {
+    "id": 41,
+    "title": "BBQ Chicken",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/10/BBQ-Chicken-Salad.png"
+  },
+  {
+    "id": 42,
+    "title": "Chicken Slice",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/10/Chicken-Slice-Salad.png"
+  },
+  {
+    "id": 43,
+    "title": "Fish & Chips",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2024/06/fish-and-chips.png"
+  },
+  {
+    "id": 43,
+    "title": "Italian B.M.T.",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Italian-BMT-Salad.png"
+  },
+  {
+    "id": 44,
+    "title": "Tuna Mayo",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Tuna-Mayo-Salad.png"
+  },
+  {
+    "id": 45,
+    "title": "Roast Beef",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2024/06/Roast-Beef-Salad-2.png"
+  },
+  {
+    "id": 46,
+    "title": "Roasted Chicken",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Roast-Chicken-Salad.png"
+  },
+  {
+    "id": 47,
+    "title": "Spicy Italian",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/10/Spicy-Italian-Salad-1536x1024.png"
+  },
+  {
+    "id": 48,
+    "title": "Steak & Cheese",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/10/Steak-and-Cheese-Salad.png"
+  },
+  {
+    "id": 49,
+    "title": "Veggie Delight",
+    "category": "salad",
+    "description": "Turn your favorite SUBWAY® meats and veggies into a mouth-watering salad made just the way you want it. Top it with ranch dressing or light Italian for a flavourful, satisfying meal.",
+    "price": 7.49,
+    "image": "https://www.subway.co.id/wp-content/uploads/2021/08/Veggie-Delite-Salad.png"
   }
 ]

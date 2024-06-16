@@ -8,7 +8,7 @@
         :class="[open && 'bg-yellow-500']"
       >
         <span
-          class="truncate px-4 py-2 text-xl text-green-700 group-hover:text-green-600"
+          class="truncate px-4 py-2 text-xl max-sm:px-2 text-green-700 group-hover:text-green-600 max-sm:text-[16px] max-sm:py-0"
         >
           {{ item.label }}</span
         >
@@ -23,7 +23,7 @@
       </UButton>
     </template>
     <template #item="{ item }">
-      <p class="px-4 text-lg text-gray-900 dark:text-white">
+      <p class="px-4 text-lg text-gray-900 dark:text-white max-sm:text-[14px] max-sm:leading-normal">
         {{ item.content }}
       </p>
     </template>
