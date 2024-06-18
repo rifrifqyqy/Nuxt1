@@ -7,12 +7,12 @@
         :ui="{ rounded: 'rounded-none', padding: {} }"
         :class="[
           open && 'bg-green-600',
-          'group border-b border-zinc-300 transition-all duration-300 hover:bg-green-600 max-sm:hover:bg-transparent',
+          'group border-b border-zinc-300 transition-all duration-300 hover:bg-zinc-200',
         ]"
       >
         <span
           :class="[
-            'truncate px-4 py-2 text-lg text-green-600 group-hover:text-zinc-50 max-sm:px-0 max-sm:py-1 max-sm:text-[16px] max-sm:group-hover:text-green-600',
+            'truncate px-4 py-2 text-lg text-green-600 max-sm:px-0 max-sm:py-1 max-sm:text-[16px]',
             open && 'text-zinc-50',
           ]"
         >
@@ -22,7 +22,7 @@
         <template #trailing>
           <UIcon
             name="i-heroicons-chevron-down-20-solid"
-            class="ms-auto h-5 w-5 transform text-green-600 transition-transform duration-200 group-hover:text-white max-sm:group-hover:text-green-600"
+            class="ms-auto h-5 w-5 transform text-green-600 transition-transform duration-200"
             :class="[open && 'rotate-180 text-zinc-50']"
           />
         </template>
