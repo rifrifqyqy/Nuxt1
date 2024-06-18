@@ -2,7 +2,7 @@
   <div class="card bg-zinc-50">
     <NuxtLink :to="`/our_menu/${products.id} `">
       <div
-        class="relative h-[200px] w-full overflow-hidden rounded-md bg-amber-100 max-sm:h-[140px] max-sm:rounded-sm"
+        class="relative z-0 h-[200px] w-full overflow-hidden rounded-md bg-amber-100 max-sm:h-[140px] max-sm:rounded-sm"
       >
         <img :src="products.image" alt="" class="h-full w-full object-cover" />
         <h3 class="category">{{ products.category }}</h3>
